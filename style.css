@@ -1,0 +1,176 @@
+
+  /* Base Styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    line-height: 1.6;
+    color: #2c3e50;
+    background-color: #f8f8fa;
+ 
+  }
+
+  /* Navigation */
+  nav {
+    padding: 1rem 2rem;
+    background-color: rgb(158, 160, 223) !important;
+    /* color: rgb(111, 10, 10) !important; */
+  }
+  .nav-item .nav-link{
+    color: red !important;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #f8f8fa;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+  }
+  
+  nav a:hover {
+    color: #db34db;
+    background: rgba(52, 152, 219, 0.1);
+  }
+  
+  /* Hero Section */
+  #hero {
+    background: linear-gradient(135deg, #3498db, #9b59b6);
+    /* min-height: 80vh; */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 15px;
+  }
+  
+  #hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  #hero p {
+    font-size: 1.25rem;
+  }
+  
+  /* About Section */
+  #about {
+    padding: 4rem 0;
+  }
+  
+  .about-img {
+    max-width: 300px;
+    border: 5px solid #3498db;
+  }
+  
+  /* Services Section */
+  #services {
+    padding: 4rem 0;
+  }
+  
+  .service-card {
+    border: none;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .service-icon {
+    font-size: 3rem;
+    color: #3498db;
+  }
+  
+  /* Experience, Projects & Education Sections */
+  #experience, 
+  #projects, 
+  #education {
+    padding: 4rem 0;
+  }
+  
+  /* Updated Card Styles for Consistent Height */
+  .card {
+    border: none;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-body {
+    flex: 1;
+  }
+  
+  /* Testimonials Section */
+  #testimonials {
+    padding: 4rem 0;
+    background: #f1f1f1;
+  }
+  
+  .testimonial {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin: 15px 0;
+    height: 100%;
+    flex: 1;
+  }
+  
+  /* Contact Section */
+  #contact {
+    padding: 4rem 0;
+  }
+  
+  /* Footer */
+  .footer {
+    background: #2c3e50;
+    color: #f8f8fa;
+    padding: 2rem 0;
+  }
+  
+  .footer h5 {
+    margin-bottom: 1rem;
+  }
+  
+  .footer a {
+    color: #f8f8fa;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer a:hover {
+    color: #db34db;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #hero h1 {
+      font-size: 2.5rem;
+    }
+    
+    #hero p {
+      font-size: 1rem;
+    }
+    
+    .about-img {
+      margin-bottom: 2rem;
+    }
+  }
+  
