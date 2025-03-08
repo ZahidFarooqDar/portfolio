@@ -33,6 +33,28 @@
     color: #db34db;
     background: rgba(52, 152, 219, 0.1);
   }
+  /* Improve mobile menu */
+.navbar-toggler {
+  border-color: rgba(255,255,255,0.5) !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+@media (max-width: 991px) {
+  .navbar-nav {
+    padding: 1rem 0;
+  }
+  
+  .nav-item {
+    margin: 0.5rem 0;
+  }
+  
+  .nav-link {
+    padding: 0.75rem 1.5rem !important;
+  }
+}
   
   /* Hero Section */
   #hero {
@@ -113,21 +135,91 @@
     flex: 1;
   }
   
-  /* Testimonials Section */
-  #testimonials {
-    padding: 4rem 0;
-    background: #f1f1f1;
+  /* Skills Section */
+#skills {
+  padding: 4rem 0;
+  background: #fff;
+}
+
+.skill-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.skill-item {
+  background: #3498db15;
+  color: #3498db;
+  padding: 0.8rem 1.2rem;
+  border-radius: 25px;
+  font-size: 0.95rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-item:hover {
+  background: #3498db;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+}
+
+#skills .card {
+  border: none;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+#skills .card:hover {
+  transform: translateY(-5px);
+}
+
+/* Testimonials Section */
+#testimonials {
+  padding: 4rem 0;
+}
+
+.testimonial {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial p {
+  flex-grow: 1;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .skill-items {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0.8rem;
+  }
+  
+  .skill-item {
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+  }
+  
+  #skills .card {
+    margin-bottom: 1.5rem;
   }
   
   .testimonial {
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
-    padding: 20px;
-    margin: 15px 0;
-    height: 100%;
-    flex: 1;
+    margin-bottom: 1.5rem;
   }
+}
   
   /* Contact Section */
   #contact {
